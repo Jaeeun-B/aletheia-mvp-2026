@@ -45,47 +45,6 @@ AI가 매끄러운 결론을 쏟아내는 시대에, 정작 그 결론이 어떤
 
 ---
 
-## 🚀 빠른 시작
-
-### 요구 사항
-
-- **Node.js** >= 18
-- **npm** >= 9
-
-### 1. 클론 및 설치
-
-```bash
-git clone https://github.com/Jaeeun-B/aletheia-mvp-2026.git
-cd aletheia-mvp-2026
-npm install
-```
-
-### 2. 실행
-
-```bash
-npm run dev
-```
-
-**<http://localhost:5173>** 에서 확인할 수 있습니다. 환경변수 없이 목업 데이터로 전체 흐름이 동작합니다.
-
-### 3. 프로덕션 빌드
-
-```bash
-npm run build && npm run preview
-```
-
-### 4. (선택) 추론 서버 연결
-
-모델 서버가 준비되면 `.env.local`에 한 줄만 추가하면 실서버로 전환됩니다.
-
-```bash
-VITE_API_BASE=https://your-inference-server
-```
-
-서버 응답이 실패하면 자동으로 목업으로 폴백하므로 시연 중 서버가 죽어도 화면이 멈추지 않습니다.
-
----
-
 ## ✨ 화면 구성
 
 | 탭 | 내용 |
@@ -192,8 +151,6 @@ neutral       → weak           (약한 지지)   confidence < 0.7
 - `severity`: `high` | `medium` | `low`
 
 > **노드 좌표(x, y)는 서버가 보내지 않습니다.** 화면 배치는 표현의 문제이므로 프론트엔드의 `applyLayout()`이 계산합니다. 덕분에 모델 팀과 프론트 팀이 좌표 규격을 협의할 필요가 없습니다.
-
-자세한 연동 절차는 [`docs/aletheia-api-integration-guide.md`](docs/aletheia-api-integration-guide.md)를 참고하세요.
 
 ---
 

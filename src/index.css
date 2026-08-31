@@ -3,3 +3,10 @@
 @tailwind utilities;
 
 html, body { margin: 0; }
+body {
+  font-family: "Pretendard", -apple-system, "Apple SD Gothic Neo",
+    "Malgun Gothic", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+/* 가로 스크롤 칩 영역의 스크롤바 숨김 */
+::-webkit-scrollbar { height: 0; width: 0; }
